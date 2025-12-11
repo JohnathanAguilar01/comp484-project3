@@ -45,7 +45,11 @@ function toggleStatus(event) {
   if (!statusOutput.classList.contains("hidden")) {
     // Status is visible - set background to yellow
     mainTitle.style.backgroundColor = "yellow";
+    return;
   }
+
+  mainTitle.style.background = "";
+  return;
 }
 
 // Task 5: Add event listener to toggle button
