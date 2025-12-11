@@ -34,6 +34,22 @@ toggleButton.setAttribute("data-action", "status-toggle");
 // --- Tasks 5, 6, 7 & 8: Toggle Functionality ---
 // Define the functions (e.g., toggleStatus, createTimestamp) and event listeners
 // here to handle the click event on the toggleButton [6, 7].
+function toggleStatus(event) {
+  // Task 6: Prevent default anchor behavior (page jump/refresh)
+  event.preventDefault();
+
+  // Task 5: Toggle the hidden class on status output
+  statusOutput.classList.toggle("hidden");
+
+  // Task 7: Change title background color based on visibility
+  if (!statusOutput.classList.contains("hidden")) {
+    // Status is visible - set background to yellow
+    mainTitle.style.backgroundColor = "yellow";
+  }
+}
+
+// Task 5: Add event listener to toggle button
+toggleButton.addEventListener("click", toggleStatus);
 
 /* ======================================= */
 // --- Task 10: Timed Animation ---
