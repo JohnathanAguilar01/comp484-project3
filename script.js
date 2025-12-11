@@ -16,12 +16,13 @@ const itemList = document.getElementById("item-list");
 /* ======================================= */
 // --- Task 3: Selecting and Changing Inner HTML ---
 // Write the code here to select the mainTitle and update its innerHTML:
-// Example: mainTitle.innerHTML = "New Title";
+mainTitle.innerHTML = "DOM Project: Ready!";
 
 /* ======================================= */
 // --- Task 4: Attribute Modification ---
 // Write the code here to use setAttribute() on the toggleButton element
 // to add the required 'data-action' attribute.
+toggleButton.setAttribute("data-action", "status-toggle");
 
 /* ======================================= */
 // --- Task 9: Looping and Applying Changes ---
