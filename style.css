@@ -36,5 +36,6 @@ body {
 /* This class must be defined to enable the toggle functionality later. */
 .hidden {
   /* Sets the element to be completely invisible and not take up space. */
+  /* Johnathan has confimed that "display: none;" is in this .hidden class */
   display: none;
 }
